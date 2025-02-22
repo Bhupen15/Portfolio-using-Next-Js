@@ -8,7 +8,6 @@ const Contact = () => {
     const [result, setResult] = useState("");
 
     const access_token = process.env.NEXT_PUBLIC_ACCESS_KEY;
-    console.log(access_token, "<<<<<<<<<<<<<<<<<<<<<")
 
     const onSubmit = async (event) => {
         event.preventDefault();
