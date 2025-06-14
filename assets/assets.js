@@ -37,6 +37,7 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import linkedin from './linkedin.png';
 import github from './github-logo.png';
+import github_white from './github-white.png';
 import instagram from './instagram.png';
 
 export const assets = {
@@ -79,6 +80,7 @@ export const assets = {
     right_arrow_bold_dark,
     linkedin,   
     github,
+    github_white,
     instagram
 };
 
@@ -123,7 +125,21 @@ export const toolsData = [
 ];
 
 export const socialMedia = [
-  { icon: assets.linkedin, link: 'https://www.linkedin.com/in/bhupendrachoudhary' },
-  {  icon: assets.github, link: 'https://github.com/Bhupen15' },
-   { icon:assets.instagram, link: 'https://www.instagram.com/im.bhupen'}
-];
+ 
+    {
+      icon: assets.linkedin,
+      iconDark: assets.linkedin, 
+      link: 'https://www.linkedin.com/in/bhupendrachoudhary',
+    },
+    {
+        icon: assets.github,
+        iconDark: assets.github_white,
+        link: 'https://github.com/Bhupen15',
+      },
+    {
+      icon: assets.instagram,
+      iconDark: assets.instagram,
+      link: 'https://www.instagram.com/im.bhupen',
+    },
+  ];
+  

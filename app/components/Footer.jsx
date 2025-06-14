@@ -15,16 +15,20 @@ const Footer = ({isDarkMode}) => {
     </div>
 <div className='text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] py-6 mt-12'>
     <p>© 2025 Bhupendra Choudhary. All rights reserved.</p>
-  <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
-    {socialMedia.map(({icon, link}, index) => (
-      <li key={index}>
-        <a href={link} target='_blank' className='flex items-center gap-3 sm:gap-5'>
-          <Image src={icon} alt='' className='w-6'/>
-        </a>
-      
-      </li>
-    ))}
-    </ul>
+    <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
+  {socialMedia.map(({ icon, iconDark, link }, index) => (
+    <li key={index}>
+      <a href={link} target='_blank' className='flex items-center gap-3 sm:gap-5'>
+        <Image
+          src={isDarkMode && iconDark ? iconDark : icon}
+          alt='social-icon'
+          className='w-6'
+        />
+      </a>
+    </li>
+  ))}
+</ul>
+
 </div>
 
     </div>
