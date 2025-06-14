@@ -15,6 +15,7 @@ const closeMenu = () => {
 }
 
 useEffect(()=>{
+
  window.addEventListener('scroll', ()=>{
     if(scrollY>50){
       setIsScroll(true);
